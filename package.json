@@ -102,7 +102,10 @@
     "yargs-parser": "^21.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+		"server": "npm start --prefix ./backend",
+		"client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""	
   },
   "keywords": [],
   "author": "",
