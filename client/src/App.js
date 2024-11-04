@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import News from "./pages/News";
+import News from "./Components/News";
 
 function App() {
   return (

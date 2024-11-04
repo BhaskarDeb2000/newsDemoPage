@@ -6,8 +6,6 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
 
-console.log(NEWS_API_KEY);
-
 app.use(express.json());
 app.use(cors());
 

@@ -11,11 +11,10 @@ const News = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      setLoading(true);
       setError(null); // Reset error on new request
       try {
         const response = await axios.get(
-          `https://news-demo-backend-api.vercel.app/news?page=${page}&pageSize=${pageSize}`
+          `https://news-demo-backend-ap.vercel.app/news?page=${page}&pageSize=${pageSize}`
         );
         setNews(response.data.articles);
         setTotalResults(response.data.totalResults);
