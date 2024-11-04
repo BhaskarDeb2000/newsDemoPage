@@ -5,7 +5,7 @@ const News = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [page, setPage] = useState(5);
+  const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
   const pageSize = 5;
 
